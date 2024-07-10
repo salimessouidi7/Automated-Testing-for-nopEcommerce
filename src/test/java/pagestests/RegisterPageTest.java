@@ -11,7 +11,7 @@ public class RegisterPageTest extends BaseTest {
 	String day = "12";
 	String month = "April";
 	String year = "2002";
-	String email = "test@gmail.com";
+	String email = "test2002@gmail.com";
 	String company = "asd";
 	String password = "123456";
 	String confirmPassword = "123456";

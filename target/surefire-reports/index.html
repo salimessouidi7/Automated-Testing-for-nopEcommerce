@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\TOPINFORMATIQUE\eclipse-workspace\NopEcommerceTestAuto\testng.xml</span>
+                    <span>C:\Users\TOPINFORMATIQUE\eclipse-workspace\Automated-Testing-for-nopEcommerce\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="pagestests.ErrorRegisterTest" class="method navigator-link" hash-for-method="errorFirstNameTest">errorFirstNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="pagestests.RegisterPageTest" class="method navigator-link" hash-for-method="registerPageTest">registerPageTest</a> <!-- method navigator-link -->
@@ -121,6 +126,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">pagestests.ErrorRegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="errorFirstNameTest">
+                  </a> <!-- errorFirstNameTest -->
+                  <span class="method-name">errorFirstNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">pagestests.RegisterPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -136,7 +156,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\TOPINFORMATIQUE\eclipse-workspace\NopEcommerceTestAuto\testng.xml</span>
+            <span class="header-content">C:\Users\TOPINFORMATIQUE\eclipse-workspace\Automated-Testing-for-nopEcommerce\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,6 +166,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;pagestests.RegisterPageTest&quot;/&gt;
+      &lt;class name=&quot;pagestests.ErrorRegisterTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -159,7 +180,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +206,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'registerPageTest')
 data.setCell(0, 2, 'pagestests.RegisterPageTest')
-data.setCell(0, 3, 872);
+data.setCell(0, 3, 3481);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'errorFirstNameTest')
+data.setCell(1, 2, 'pagestests.ErrorRegisterTest')
+data.setCell(1, 3, 1276);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 872 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,18 +246,33 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">pagestests.RegisterPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">registerPageTest</span>
-                <span class="method-start">3020 ms</span>
+                <span class="method-start">3355 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3896 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">6840 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">pagestests.ErrorRegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7092 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">errorFirstNameTest</span>
+                <span class="method-start">9760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11036 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

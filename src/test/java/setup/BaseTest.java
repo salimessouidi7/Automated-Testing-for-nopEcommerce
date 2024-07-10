@@ -7,14 +7,14 @@ import org.testng.annotations.*;
 public class BaseTest {
     protected static WebDriver driver;
 
-    @BeforeTest
+    @BeforeClass
     public void setUp() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://demo.nopcommerce.com/");
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit(); // Quit all browser windows and end the WebDriver session.

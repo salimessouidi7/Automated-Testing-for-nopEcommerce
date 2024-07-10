@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="pagestests.RegisterPageTest">
+      <class name="pagestests.ErrorRegisterTest">
         <methods>
-          <include name="registerPageTest"/>
+          <include name="errorFirstNameTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- pagestests.RegisterPageTest -->
+      </class> <!-- pagestests.ErrorRegisterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
