@@ -2,22 +2,24 @@ package pagestests;
 
 import org.testng.annotations.*;
 import setup.BaseTest;
+import utils.CSVUtils;
 import pages.RegisterPage;
 
 public class RegisterPageTest extends BaseTest {
 
-	String firstname = "test";
-	String lastname = "test1";
-	String day = "12";
-	String month = "April";
-	String year = "2002";
-	String email = "test2002@gmail.com";
-	String company = "asd";
-	String password = "123456";
-	String confirmPassword = "123456";
+//	String firstname = "test";
+//	String lastname = "test1";
+//	String day = "12";
+//	String month = "April";
+//	String year = "2002";
+//	String email = "test2002@gmail.com";
+//	String company = "asd";
+//	String password = "123456";
+//	String confirmPassword = "123456";
 
-	@Test
-	public void registerPageTest() {
+	@Test(dataProvider = "csvData", dataProviderClass = CSVUtils.class)
+	public void registerPageTest(String firstname, String lastname, String day, String month, String year,
+			String email, String company, String password, String confirmPassword) {
 		RegisterPage regPage = new RegisterPage(driver);
 		int dayInt = Integer.parseInt(day);
 		int yearInt = Integer.parseInt(year);

@@ -1,1 +1,5 @@
+utils\CSVUtils.class
 pages\RegisterPage.class
+pages\ErrorRegister.class
+utils\Commons.class
+utils\ExtentTestNGITestListener.class
