@@ -6,7 +6,6 @@
       <class name="pagestests.RegisterPageTest">
         <methods>
           <include name="registerPageTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- pagestests.RegisterPageTest -->
