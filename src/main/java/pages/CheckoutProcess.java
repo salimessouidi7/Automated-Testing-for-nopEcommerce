@@ -87,7 +87,8 @@ public class CheckoutProcess {
     	wait.until(ExpectedConditions.elementToBeClickable(confirmOrderButton)).click();
     	
     	wait.until(ExpectedConditions.elementToBeClickable(finalConfirmOrderButton)).click();
-    	
+
+	wait.until(ExpectedConditions.visibilityOfElementLocated(confirmOrderMessage));
     	WebElement orderConfirmMsg = driver.findElement(confirmOrderMessage);
         // Compare the actual alert text with the expected value
         assertEquals(orderConfirmMsg.getText(), EXPECTED_CONFIRMATION_MESSAGE, "Confirmation message mismatch");
