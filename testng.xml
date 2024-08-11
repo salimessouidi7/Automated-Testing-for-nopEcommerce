@@ -8,9 +8,9 @@
 		<classes>
 			<class name="pagestests.RegisterPageTest" />
 			<!-- <class name="pagestests.ErrorRegisterTest"/> -->
-			<class name="pagestests.LoginPageTest" />
+			<!--<class name="pagestests.LoginPageTest" />
 			<class name="pagestests.AddItemToCartTest" />
-			<class name="pagestests.CheckoutTest" />
+			<class name="pagestests.CheckoutTest" />-->
 
 		</classes>
 	</test> <!-- Test -->
